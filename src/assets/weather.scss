@@ -3,44 +3,61 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100%;
   line-height: 2rem;
 
   .weather-title {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 24px;
+    font-size: 36px;
     letter-spacing: 2px;
   }
 
-  .weather-details {
-    display: flex;
-
-    .weather-condition {
-      font-size: 22px;
-      letter-spacing: 1.5px;
-      font-family: 'Ubuntu', sans-serif;
-      margin-top: 12px;
+  .location-search-bar {
+    .location-search-bar-input {
+      width: 460px;
+      padding: 8px;
+      background-color: #fffdfa;
+      color: black;
+      border-radius: 10px;
     }
+  }
 
-    .degrees-container {
+  .current-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+
+    .weather-details {
       display: flex;
 
-      .weather-condition-degrees {
-        font-size: 16px;
-        line-height: 24px;
+      .weather-condition {
+        font-size: 24px;
+        letter-spacing: 1.5px;
         font-family: 'Ubuntu', sans-serif;
+        margin-top: 28px;
       }
-    }
 
-    .weather-condition_minor-details {
-      margin-left: 10px;
-      font-size: 14px;
-      line-height: 28px;
-    }
+      .degrees-container {
+        display: flex;
 
-    img {
-      width: 160px;
+        .weather-condition-degrees {
+          font-size: 16px;
+          line-height: 24px;
+          font-family: 'Ubuntu', sans-serif;
+        }
+      }
+
+      .weather-condition_minor-details {
+        margin-top: 8px;
+        margin-left: 10px;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: right;
+      }
+
+      img {
+        width: 192px;
+      }
     }
   }
 }

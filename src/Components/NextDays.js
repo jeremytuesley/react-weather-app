@@ -12,8 +12,16 @@ const NextDays = ({ weatherData }) => {
             <h2 className="next-day_title">{item.day}</h2>
             <img src={item.iconURL} alt="next-days_weather" />
             <div className="degrees-container">
-              {item.max_temp.c} {item.min_temp.c}
-              <div className="weather-condition-degrees">&deg;C</div>
+              {item.max_temp.c}
+              <div className="weather-condition-degrees weather-condition_max-temp">
+                &deg;C
+              </div>{' '}
+              <div className="weather-condition_min-temp">
+                {item.min_temp.c}
+              </div>
+              <div className="weather-condition-degrees weather-condition_min-temp">
+                &deg;C
+              </div>
             </div>
           </div>
         );
